@@ -1,5 +1,7 @@
 #root{
   background-color: #42B604;
+ margin-top: -1vh;
+ margin-left: -1vh;
 }
 
 .header{
@@ -25,4 +27,80 @@
 .button-menu{
   justify-self: stretch;
 }
+
+.container-start{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5vh;
+  background-size: cover;
+  /* height: 100vh; */
+  background-color: #42B604;
+}
+
+.logo-start{
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 63vh;
+  border-right: thick solid #d6ef33dd ;
+}
+
+.logoStartBQ{
+  height: 50vh;
+  justify-self: center;
+  margin-bottom: 25vh;
+  margin-left: -6;
+}
+.logoStart{
+  height: 36vh;
+  background-color: #42B604;
+  justify-self: center;
+  margin-top: 3vh;
+ 
+  
+}
+
+
+.links-start{
+height: 100vh;
+margin-top: -1vh;
+grid-template-rows: 20vh 20vh;
+align-self: center;
+
+margin-right: 10vh;
+}
+
+.logoStart :hover {border-radius:50%;
+-webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+-webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+.link{
+  font-size: x-large;
+  color: aliceblue;
+}
+
+.menu-nav{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
+  
+}
+
+.button-menu{
+  border-radius: 20px;
+  height: 6vh;
+  width: 15vh;
+  align-self: center;
+  margin-right: 15vh;
+  background-color: #dbef46f5 ;
+  border-color: solid #d5f507dd;
+}
+
+
+
+
 

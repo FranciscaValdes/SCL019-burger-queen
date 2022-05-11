@@ -6,7 +6,6 @@ import { db } from './firebase-config';
 export const dataMenu = async() => { 
     const querySnapshot = await getDocs(collection(db, "menus-bq")); //getDocs (traer coleccion "menus" de database (Firestore) )
     console.log(querySnapshot.docs[0].data());
-    console.log("hola");
     return querySnapshot.docs[0].data();
 
 }

@@ -1,16 +1,33 @@
-import {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 // import {Desayuno} from "./menu-desayuno";
-import {dataMenu} from "../firebase/firebase-functions";
+import { dataMenu } from "../firebase/firebase-functions";
 
 
-export const DataDesayuno= () => {
+export const DataDesayuno = () => {
     const [desayuno, setDesayuno] = useState([]);
     useEffect(() => {
         dataMenu().then(res => {
             setDesayuno(res.breakfast);
         })
     }, []);
-    console.log(desayuno);
+    return (
+        <div className="botones-desayuno">
+            {
+                desayuno.map((product) => {
+                    return (
+                        <button key={product.id}
+                            className="product-item"
+                            // onClick={() => {setDesayuno(product)}}
+                            value={product.item}
+                        >
+                            <h2>{product.item}</h2>
+                            <h1>{`${product.price} $`}</h1>
+                        </button>
+                    )
+                })
+            }
+        </div>
+    )
 
 }
 export default DataDesayuno;

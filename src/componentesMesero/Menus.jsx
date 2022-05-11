@@ -2,9 +2,16 @@ import React from "react";
 import { Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Logo from "../imagenes/logobq.png";
+import DataDesayuno from "./Desayuno";
+
 // import {Link} from 'react-router-dom';
 
 function Menus(dataMenu, showProducts) {
+
+const showBreakfast = () => {
+DataDesayuno();
+}
+
     return (
         
         <section className="section-menu">
@@ -15,7 +22,7 @@ function Menus(dataMenu, showProducts) {
                 <Navbar.Collapse>
                     <nav className="menu-nav">
 
-                        <button className="button-menu">Desayuno</button>
+                        <button className="button-menu" onClick={()=> showBreakfast()}>Desayuno</button>
                         <button className="button-menu">Hamburguesas</button>
                        <button className="button-menu">Acompañamientos</button>
                        

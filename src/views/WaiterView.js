@@ -6,11 +6,11 @@ function WaiterView() {
   const [dataProduct, setDataProduct] = useState([]);
   return (
     <div className="waiter">
-     <Menus 
-     dataMenu = {dataProduct}
-     showProducts= {setDataProduct}
-     />
-     < DataDesayuno/>
+      <Menus
+        dataMenu={dataProduct}
+        showProducts={setDataProduct}
+      />
+      < DataDesayuno />
     </div>
   );
 }
