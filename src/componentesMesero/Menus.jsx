@@ -5,7 +5,8 @@ import Burguers from "./Burguers";
 import Accompaniments from "./Accompaniments";
 import Drinks from "./Drinks";
 import Logo from "../imagenes/logobq.png";
-
+import { Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 // 
 export default function MenuButtons() {
     const [menuState, setmenuState] = useState(1);
@@ -16,13 +17,14 @@ export default function MenuButtons() {
 
     return (
         <div>
-            <header >
+            <header className="header" >
                 <img src={Logo} alt="logo restaurant burger queen" className="logo-bq"></img>
             </header>
             <div className="conteiner-menu-options">
                 <div className="options-menu">
 
-                    <button
+                    <Button
+                        variant="outline-success btn-lg"
                         className={
                             menuState === 1 ? "active-products" : "products"
                         }
@@ -31,9 +33,10 @@ export default function MenuButtons() {
                         <h3 className="menu-titles">
                             Desayuno
                         </h3>
-                    </button>
+                    </Button>
 
-                    <button
+                    <Button
+                     variant="outline-success btn-lg"
                         className={
                             menuState === 2 ? "active-products" : "products"
                         }
@@ -44,9 +47,10 @@ export default function MenuButtons() {
                             Burguers
                         </h3>
 
-                    </button>
+                    </Button>
 
-                    <button
+                    <Button
+                     variant="outline-success btn-lg"
                         className={
                             menuState === 3 ? "active-products" : "products"
                         }
@@ -57,9 +61,10 @@ export default function MenuButtons() {
                             Accompaniments
                         </h3>
 
-                    </button>
+                    </Button>
 
-                    <button
+                    <Button
+                     variant="outline-success btn-lg"
                         className={
                             menuState === 4 ? "active-products" : "products"
                         }
@@ -70,7 +75,7 @@ export default function MenuButtons() {
                             Drinks
                         </h3>
 
-                    </button>
+                    </Button>
 
                 </div>
 

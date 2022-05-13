@@ -18,13 +18,13 @@ export default function Drinks() {
             {dataMenu.drinks.map((item) => {
                 return (
                     <div>
-                        <button className="button-product" key={item.id}>
+                        <button 
+                        variant="outline-danger"
+                        className="button-product" key={item.id}>
                             <h3 className="product-titles"> {item.product} </h3>
                             <h3 className="product-titles"> $ {item.price} </h3>
                         </button>
-                        <form action="">
-
-                        </form>
+                    
                     </div>
                 )
             })}

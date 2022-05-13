@@ -1,7 +1,6 @@
 #root{
-  background-color: #42B604;
- margin-top: -1vh;
- margin-left: -1vh;
+  background-color: whitesmoke;
+ flex: 1;
 }
 
 
@@ -13,6 +12,7 @@
   background-size: cover;
   /* height: 100vh; */
   background-color: #42B604;
+  
 }
 
 .logo-start{
@@ -62,11 +62,7 @@ transform: rotate(360deg);
   color: aliceblue;
 }
 
-.menu-nav{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: large;
-  
-}
+
 
 .button-menu{
   border-radius: 20px;
