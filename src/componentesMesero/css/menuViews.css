@@ -1,0 +1,41 @@
+.content {
+    display: none;
+  }
+ 
+  .active-content {
+    display: block;
+  }
+  .header{
+    text-align: center;
+   
+  }
+  
+  .logo-bq{
+    height: 150px;
+   
+  }
+  
+  .options-menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    align-content: stretch;
+    justify-items: stretch;
+  }
+
+  .menu{
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    align-content: stretch;
+    justify-items: stretch;
+    border-radius: 20%;
+    border-color: white;
+    column-gap: 10vh;
+  }
+
+  .button-product{
+    justify-self: stretch;
+    border-radius: 4vh;
+  }

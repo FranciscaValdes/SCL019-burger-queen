@@ -1,67 +1,21 @@
-import React, { useState, useEffect } from "react";
-// import {Desayuno} from "./menu-desayuno";
-import { dataMenu } from "../firebase/firebase-functions";
+import dataMenu from "./dataMenu.json";
+import React from "react"; //{useContext}
 
 
-export const DataDesayuno = () => {
-    const [desayuno, setDesayuno] = useState([]);
-    useEffect(() => {
-        dataMenu().then(res => {
-            setDesayuno(res.breakfast);
-        })
-    }, []);
+export default function Desayuno() {
+
     return (
-        <div className="botones-desayuno">
-            {
-                desayuno.map((product) => {
-                    return (
-                        <button key={product.id}
-                            className="product-item"
-                            // onClick={() => {setDesayuno(product)}}
-                            value={product.item}
-                        >
-                            <h2>{product.item}</h2>
-                            <h1>{`${product.price} $`}</h1>
-                        </button>
-                    )
-                })
-            }
+        <div className="menu">
+            {dataMenu.breakfast.map((item) => {
+                return (
+                    <button className="button-product" key={item.id} >
+                        <h3 className="product-titles"> {item.product} </h3>
+                        <h3 className="product-titles"> $ {item.price} </h3>
+                    </button>
+                )
+            })}
         </div>
     )
-
 }
-export default DataDesayuno;
 
 
-
-
-
-// export const ContainerDesayuno = () => {
-// const [desayuno, setDesayuno] = useState([]);
-// useEffect(()=> {
-// db.collection("menusbq")
-// .onSnapshot( snap => {
-//     const documents = [];
-//     snap.array.forEach(doc => {
-//         documents.push({
-//             id: doc.id,
-//             ...doc.data()
-//         });
-//         setDesayuno(documents);
-//     });
-// }
-
-// )
-// }, [desayuno]
-
-// )
-// return (
-//     <div>
-//         {
-//             desayuno.map((menu) => (
-// <Desayuno key={menu.id} menu={menu}/>
-//             ))
-//         }
-//     </div>
-// )
-// }
