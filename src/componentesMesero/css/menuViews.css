@@ -1,0 +1,69 @@
+.content {
+    display: none;
+    border-radius: 4vh;
+  }
+ 
+  .active-content {
+    display: block;
+    border-radius: 4vh;
+  }
+  .header{
+   display: grid;
+   grid-template-columns: auto;
+   align-content: center;
+   align-items: center;
+   background-color: #42B604;
+  }
+  
+  .logo-bq{
+    height: 20vh;
+    justify-self: center;
+
+   
+  }
+  
+  .options-menu{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    align-content: stretch;
+    justify-items: stretch;
+    border-radius: 4vh;
+    margin: 3vh;
+    background-color: white;
+    padding: 2vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+  .menu{
+    margin-top: 2vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    align-content: stretch;
+    justify-items: stretch;
+    border-radius: 2vh;
+    border-color: white;
+    column-gap: 10vh;
+    background-color: rgb(26, 107, 5);
+
+  }
+
+  .button-product{
+    justify-self: stretch;
+    border-radius: 4vh;
+    margin: 5vh;
+    border-color: green;
+    background-color: rgba(4, 125, 4, 0.667);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+  }
+
+  .conteiner-menu-options{
+      border-radius: 4vh;
+  }
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

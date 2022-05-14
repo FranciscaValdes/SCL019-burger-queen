@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import WaiterView from "./views/WaiterView";
 import StartView from "./views/StartView";

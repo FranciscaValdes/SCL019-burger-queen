@@ -1,0 +1,89 @@
+{
+    "name": "Menu",
+    "breakfast": [
+        {
+            "id": "0",
+            "product": "Café americano",
+            "price": "5.00"
+        },
+        {
+            "id": "1",
+            "product": "Café con leche",
+            "price": "7.00"
+        },
+        {
+            "id": "2",
+            "product": "Sandwich de jamón y queso",
+            "price": "10.00"
+        },
+        {
+            "id": "3",
+            "product": "Jugo de frutas natural",
+            "price": "7.00"
+        }
+    ],
+    "burguers": [
+        {
+            "id": "4",
+            "product": "Hamburguesa simple",
+            "price": "10.00"
+        },
+        {
+            "id": "5",
+            "product": "Hamburguesa doble",
+            "price": "15.00"
+        },
+        {
+            "id":"6",
+            "product": "Res",
+            "price": ""
+        },
+        {
+            "id":"7",
+            "product": "Pollo",
+            "price": ""
+        },
+        {
+            "id":"8",
+            "product": "Vegetariana",
+            "price": ""
+        
+        }
+    ],
+
+    "accompaniments": [
+        {
+            "id": "9",
+            "product": "Papas fritas",
+            "price": "5"
+        },
+        {
+            "id": "10",
+            "product": "Aros de cebolla",
+            "price": "5"
+        }
+    ],
+
+    "drinks": [
+        {
+            "id": "11",
+            "product": "Agua 500ml",
+            "price": "5"
+        },
+        {
+            "id": "12",
+            "product": "Agua 750ml",
+            "price": "7"
+        },
+        {
+            "id": "13",
+            "product": "Bebida/gaseosa 500ml",
+            "price": "7"
+        },
+        {
+            "id": "14",
+            "product": "Bebida/gaseosa 750ml",
+            "price": "10"
+        }
+    ]
+}
