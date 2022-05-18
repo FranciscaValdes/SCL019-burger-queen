@@ -5,9 +5,11 @@ import ChefView from "./views/ChefView";
 
 
 
+
 function App() {
   return (
-    <div className='app'>
+  
+        <div className='app'>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<StartView />} />
@@ -17,6 +19,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </div>
+   
   );
 }
 

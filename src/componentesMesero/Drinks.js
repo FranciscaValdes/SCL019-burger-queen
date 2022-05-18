@@ -1,7 +1,7 @@
 import dataMenu from "./dataMenu.json";
 import React from "react";  //{useContext}
 // import {UserContexts} from "../userContent/userContent";
-
+import { Button } from "react-bootstrap";
 export default function Drinks() {
 
     // const {cart, setCart} = useContext(UserContexts);
@@ -18,12 +18,12 @@ export default function Drinks() {
             {dataMenu.drinks.map((item) => {
                 return (
                     <div>
-                        <button 
-                        variant="outline-danger"
+                        <Button 
+                        variant="outline-warning"
                         className="button-product" key={item.id}>
                             <h3 className="product-titles"> {item.product} </h3>
                             <h3 className="product-titles"> $ {item.price} </h3>
-                        </button>
+                        </Button>
                     
                     </div>
                 )

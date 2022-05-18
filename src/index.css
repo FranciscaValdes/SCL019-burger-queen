@@ -1,6 +1,6 @@
 #root{
-  background-color: whitesmoke;
- flex: 1;
+  /* background-color: whitesmoke; */
+ 
 }
 
 
@@ -74,7 +74,12 @@ transform: rotate(360deg);
   border-color: solid #d5f507dd;
 }
 
-
+.container-all{
+  display: grid;
+  gap: 1 rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fit), minmax(min(100%, 25rem), 1fr);
+}
 
 
 
