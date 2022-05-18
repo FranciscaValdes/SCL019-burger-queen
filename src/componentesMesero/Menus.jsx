@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./css/menuViews.css";
-import Desayuno from "./Desayuno";
+import BreakfastMenu from "./BreakfastMenu";
 import Burguers from "./Burguers";
 import Accompaniments from "./Accompaniments";
 import Drinks from "./Drinks";
@@ -8,7 +8,8 @@ import Logo from "../imagenes/logobq.png";
 import { Button } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 // 
-export default function MenuButtons() {
+export default function Menu() {
+    
     const [menuState, setmenuState] = useState(1);
 
     const menuValue = (index) => {
@@ -80,7 +81,7 @@ export default function MenuButtons() {
                 </div>
 
                 <div className={menuState === 1 ? "content  active-content" : "content"}>
-                    <Desayuno />
+                    <BreakfastMenu />
                 </div>
 
                 <div className={menuState === 2 ? "content  active-content" : "content"}>

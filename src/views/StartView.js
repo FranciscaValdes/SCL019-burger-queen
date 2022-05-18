@@ -7,6 +7,7 @@ import Chef from "../imagenes/taxi-chef.png";
 
 const StartView = () => {
     return (
+        <div className="container-all">
         <div className="container-start">
             <div className="logo-start">
                 <img src={Logo} alt="logo burger-queen" className="logoStartBQ" />
@@ -17,8 +18,9 @@ const StartView = () => {
 
             </div>
         </div>
+        </div>
 
     )
 }
 
-export default StartView;
+export default StartView

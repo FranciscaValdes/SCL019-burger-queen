@@ -30,9 +30,10 @@
     justify-items: stretch;
     border-radius: 4vh;
     margin: 3vh;
-    background-color: white;
+     background-color: white;
     padding: 2vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 4vh;
     
   }
 
@@ -44,7 +45,7 @@
     align-content: stretch;
     justify-items: stretch;
     border-radius: 2vh;
-    border-color: white;
+    /* border-color: white; */
     column-gap: 10vh;
     background-color: rgb(26, 107, 5);
 
@@ -66,4 +67,20 @@
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    gap: 1 rem;
+    grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill), minmax(min(100%, 25rem), 1fr);
+}
+
+.cart{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+}
+
+.waiter{
+  display: grid;
+  gap: 1 rem;
+  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(auto-fill), minmax(min(100%, 25rem), 1fr);
 }
